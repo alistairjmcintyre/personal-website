@@ -2,6 +2,7 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css';
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 
 .blocks {
   height: fit-content;
@@ -11,8 +12,9 @@
 }
 
 @page{
-  size: letter portrait;
-  margin: 0;
+  size: A4 portrait;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 *{
@@ -20,9 +22,9 @@
 }
 
 :root{
-  --page-width: 8.5in;
-  --page-height: 11in;
-  --main-width: 6.20in;
+  --page-width: 8.27in;
+  --page-height: 11.69in;
+  --main-width: 6.0in;
   --sidebar-width: calc(var(--page-width) - var(--main-width));
   --decorator-horizontal-margin: 0.2in;
 
@@ -46,7 +48,7 @@ body{
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
-  font-family: "Montserrat", sans-serif; 
+  font-family: "Roboto", sans-serif; 
   font-weight: 300;
   line-height: 1.3;
   color: #444;
@@ -56,6 +58,7 @@ body{
 h1, h2, h3{
   margin: 0;
   color: #000;
+  font-family: 'Montserrat', sans-serif;
 }
 
 li{
@@ -66,15 +69,15 @@ li{
   float: left;
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
-  font-size: 7pt;
+  font-size: 8pt;
 }
 
 #sidebar{
-  float: right;
+  position: absolute;
+  right: -5px;
   width: var(--sidebar-width);
   height: 100%;
   padding: 0.6in var(--sidebar-horizontal-padding);
-  background-color: #f2f2f2;
   font-size: 8.5pt;
 }
 
@@ -104,7 +107,7 @@ li{
 }
 
 .subtitle{
-  font-size: 8pt;
+  font-size: 10pt;
 }
 
 /*** categorial blocks ***/
@@ -147,6 +150,20 @@ li{
   content: ' ';
 }
 
+#main h2.me::after {
+  height: calc(var(--row-blocks-padding-top) * 9);
+  position: absolute;
+  top: 12px;
+  /* XXX: 0.5px for aligning fx printing */
+  left: calc(-1 * var(--decorator-horizontal-margin));
+  display: block;
+  border-left: var(--decorator-border);
+  z-index: 0;
+  line-height: 0;
+  font-size: 0;
+  content: ' ';
+}
+
 /**** minor tweaks on the icon fonts ****/
 #main h2 > .fa-graduation-cap{
   left: calc(var(--main-blocks-title-icon-offset-left) - 2pt);
@@ -159,6 +176,10 @@ li{
 
 #main h2 > .fa-folder-open{
   top: 1.5pt;
+}
+#main h2 > .fa-user {
+  top: 1pt;
+  left: -23px;
 }
 
 /**** individual row blocks (date - decorator - details) ****/
@@ -179,7 +200,6 @@ li{
   font-size: 7pt;
   text-align: right;
   line-height: 1;
-  //letter-spacing: 0.5px;
   font-family: 'Source Sans Pro';
 }
 
@@ -271,6 +291,19 @@ li{
   padding: 0.05in 0 0.07in 0;
 }
 
+.about-me {
+  font-size: 8pt;
+  color: black;
+  text-transform: none;
+  width: var(--main-width - 120px);
+  padding: 13px 20px 0px 76px;
+  font-family: "Roboto", sans-serif; 
+  font-weight: 300;
+  line-height: 1.3;
+  color: #444;
+  hyphens: auto;
+}
+
 .details .place{
   float: left;
   font-size: 7.5pt;
@@ -333,19 +366,21 @@ li{
 /* sidebar */
 
 #sidebar {
-  font-family: 'Montserrat'
+  font-family: 'Roboto';
 }
 
 #sidebar h1{
   font-weight: 400;
   font-size: 11pt;
   color: var(--accent-color);
+  font-family: 'Montserrat', sans-serif;
 }
 
 #sidebar h2{
   font-weight: 300;
   font-size: 9pt;
   color: var(--accent-color);
+  font-family: 'Montserrat', sans-serif;
 }
 
 #contact{
@@ -363,12 +398,19 @@ li .phone {
   margin-left: 2.2px;
 }
 
+.libs {
+  font-size: 7pt;
+  padding-left: 2px;
+  margin-top: 0px;
+}
+
 .phone > i {
   margin-right: 2.2px;
 }
 
 #contact li {
   font-size: 8pt;
+  margin-bottom: 2px;
 }
 
 #contact li > i{
@@ -384,7 +426,22 @@ li .phone {
 
 #skills ul{
   margin: 0.05in 0 0.15in;
-  padding: 0;
   font-size: 8pt;
+  padding: 0;
 }
 
+#skills ul > li {
+  padding: 3px 0 0 0;
+}
+
+#skills ul > ul {
+  margin: 0;
+  padding: 1px 0 5px 5px;
+  font-size: 7pt;
+}
+
+#skills ul > ul > li::before {
+  font-size: 8pt;
+  content: "\00BB \0020";
+  color: var(--accent-color);
+}
