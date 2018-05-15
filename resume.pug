@@ -1,0 +1,71 @@
+include mixins.pug
+
+#main
+  #title
+    h1 Alistair McIntyre
+    .subtitle Software Developer
+
+  .main-block
+    h2 #[i.fa.fa-suitcase] Experience
+    
+    +item("Junior Software Developer", "Croplogic", "JAN '18", "NOW")
+      .description
+        | Primary focus as a Junior Developer working on mobile applications built using 
+        | Google’s new open source, cross-platform mobile framework Flutter. 
+        | This role has required learning quite a few new technologies (Dart & Flutter, Objective C), while
+        | also strengthening my existing skills, such as problem-solving, version control(git)
+        | and my proficiency with Python.
+    +item("Nightfill Assistant", "Countdown Supermarkets", "JAN '13", " NOV '16")
+      .description
+        | Working as part of a team to restock the shelves, and also independently, being 
+        | responsible for taking down the liquor displays at the end of each week and 
+        | building the displays for the next weeks specials.
+    +item("Labourer", "Alliance Meats", "NOV '11", "AUG '12")
+        
+  .main-block
+    h2 #[i.fa.fa-folder-open] Projects 
+    
+    +item("Internal Agronomy Mobile Application", "Croplogic", "2018")
+    +item("Growerview Mobile Application", "Croplogic", "2018") 
+    +item("SENG302 - Full Year Group Project", "University of Canterbury", "2017")
+    +item("SENG365 - API-First Web Development", "University of Canterbury", "2017")
+    +item("ENCE260 - Embedded Systems Project", "University of Canterbury", "2017")
+
+  .main-block.concise
+    h2 #[i.fa.fa-graduation-cap] Education
+
+    +item("BSc. Computer Science", "University of Canterbury", "NOV '12", "NOV '17")
+    +item("Diploma in Web Development", "Natcoll Design Technology",  "FEB '09", "DEC '09")
+
+#sidebar
+  #contact.side-block
+    h1 Contact
+    ul
+      li #[i.fa.fa-envelope] alistairjmcintyre@gmail.com
+      li 
+        .phone #[i.fa.fa-phone] 027 633 0043
+      
+  #skills.side-block
+    h1 Skills
+    ul
+      li UI/UX Design
+      li SDLC
+      li Git VCS
+    h1 Languages
+    h2 Proficient
+    ul
+      li Dart
+      li Python
+      li Java
+      li Javascript
+      li SQL
+
+    h2 Familiar
+    ul
+      li Objective-C
+      li PHP
+      li C/C++
+
+
+style
+  include style.scss
