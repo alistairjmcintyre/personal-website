@@ -113,7 +113,7 @@ li{
 /*** categorial blocks ***/
 
 .main-block{
-  margin-top: 0.1in;
+  margin-top: 0.05in;
 }
 
 #main h2{
@@ -180,6 +180,14 @@ li{
 #main h2 > .fa-user {
   top: 1pt;
   left: -23px;
+}
+
+/****** customize list symbol style ******/
+.details li::before{
+  position: relative;
+  margin-left: -4.25pt;
+  content: '- ';
+  font-size: 8pt;
 }
 
 /**** individual row blocks (date - decorator - details) ****/
@@ -282,7 +290,7 @@ li{
 }
 
 .main-block:not(.concise) .blocks:last-child .details div{
-  margin-bottom: 0;
+  margin-bottom: 0.08in;
 }
 
 .main-block.concise .details div:not(.concise){
@@ -329,6 +337,29 @@ li{
   content: "\f041";
 }
 
+.tech {
+  display: block;
+  padding: 0px !important;
+  margin: 5px 0px 0px 0px !important;
+  font-size: 7pt;
+  letter-spacing: 0.9px;
+}
+
+.tech li::before{
+  content: '';
+  margin-left: 0;
+}
+
+.tech li{
+  list-style: none !important;
+  display: inline-block;
+  padding:  3px 5px;
+  margin: 0px 5px 0px 0px !important;
+  background-color: rgba(44, 79, 180, 0.180);
+  border-radius: 2px;
+}
+
+
 /***** fine-tunes on the lists... *****/
 
 #main ul{
@@ -338,13 +369,6 @@ li{
 
 #main li{
   margin: 0 0 0.025in 0;
-}
-
-/****** customize list symbol style ******/
-#main li::before{
-  position: relative;
-  margin-left: -4.25pt;
-  content: '• ';
 }
 
 .details .concise ul{
@@ -362,6 +386,12 @@ li{
   margin-left: 0 !important;
 }
 
+.refs {
+  margin-left: 76px;
+  margin-top: 20px;
+  font-size: 8pt;
+  font-family: 'Montserrat';
+}
 
 /* sidebar */
 

@@ -13,60 +13,78 @@ include mixins.pug
       | both employ my skills as a Software Developer to create value, and that I can grow professionally in.
 
   .main-block
+    h2 #[i.fa.fa-graduation-cap] Education
+
+    +item("BSc. Computer Science", "University of Canterbury", "NOV '12", "NOV '17")
+    +item("Diploma in Web Development", "Natcoll Design Technology",  "FEB '09", "DEC '09")
+
+  .main-block
     h2 #[i.fa.fa-suitcase] Experience
     
     +item("Junior Software Developer", "Croplogic", "JAN '18", "NOW")
-      .description
-        | Working as part of a small team to create and maintain 2 mobile applications using 
-        | Google's new cross-platform mobile framework, Flutter. As part of this 
-        | role we built a mobile app to give growers access to their fields
-        | real-time data through the GrowerView platform. 
-        | We also built an internal tool for agronomists to be able to access
-        | and modify soil moisture readings in the cloud, and to aid them in 
-        | making decisions in the field using both historical and real time
-        | data.
+      :markdown-it
+        - Part of a small team at an exciting Agritech company.
+        - Built 2 cross-platform mobile applications using Flutter, Google's new cross-platform mobile framework.
+        - Adapted to new technologies I had never used before very quickly.
+        
     +item("Nightfill Assistant", "Countdown Supermarkets", "JAN '13", " NOV '16")
-      .description
-        | Working as member of a small team to restock the shelves throughout the week,
-        | and responsible for rotating liquor displays at the end
-        | of each week for the next weeks specials.
+
     +item("Labourer", "Alliance Meats", "NOV '11", "AUG '12")
         
   .main-block
     h2 #[i.fa.fa-folder-open] Projects 
     
     +item("Internal Agronomy Tablet App", "Croplogic", "2018")
-      .description
-        | An internal tool using Flutter & Firebase to create a cross-platform tablet application
-        | for use in the field to replace ProAg Croplogic's aging crop management system that 
-        | did not have support for modern technologies such as cloud storage.
+      | An internal tool
+      | for use in the field to replace ProAg Croplogic's aging crop management system 
+      | that had an aging UI, relied on ad-hoc wifi networks and remote desktop,
+      | and had no support for cloud storage, making data difficult to share or
+      | analyze.
+      ul.tech
+        li Dart
+        li Flutter
+        li Cloud Firestore
+        li Objective-C
+
     +item("GrowerView", "Croplogic", "2018") 
-      .description
-        | GrowerView is a cross-platform mobile application built using Flutter & Firebase for 
-        | customers of ProAg Croplogic to view the real time soil moisture readings
-        | from their fields, and so they can be automatically notified if something
-        | had gone wrong with their fields.
+      | GrowerView is a cross-platform mobile application for 
+      | customers of ProAg Croplogic to view the real time soil moisture readings
+      | from their fields, and so they can be automatically notified if something
+      | had gone wrong with their fields.
+      ul.tech
+        li Dart
+        li Flutter
+        li Cloud Firestore
+        li Python
+        li Matplotlib
+
     +item("Full Year Group Project", "University of Canterbury", "2017")
-      .description
-        | Working in a team of 8 students, we created 
-        | a 2D top-down view for the live data feed from the 35th America's Cup.
-        | Once the America's Cup had concluded, we pivoted to making a 3D multiplayer
-        | sailing game with support for LAN and Online play.
-        br 
-        | For most of the team this was our first exposure to working on a larger,
-        | longer term project (where early decisions could have greater consequences),
-        | and to the Software Development Life Cycle and Agile methodologies (Scrum).
+      | Working in a team of 8 students, we created 
+      | a 2D top-down view for the live data feed from the 35th America's Cup.
+      | Once the America's Cup had concluded, we pivoted to making a 3D multiplayer
+      | sailing game with support for LAN and Online play.
+      br 
+      | For most of the team this was our first exposure to working on a larger,
+      | longer term project (where early decisions could have greater consequences),
+      | and to the Software Development Life Cycle and Agile methodologies (Scrum).
+      ul.tech
+        li Java
+        li JavaFX
+        li Maven
+        li OpenGL
+
     +item("Crowdfunding Web Application", "University of Canterbury", "2017")
-      .description
-        | As an introduction to API First web development we were tasked with 
-        | completing a basic crowdfunding web application, first building the API to a 
-        | given specification and then the web application to use that API.
-
-  .main-block.concise
-    h2 #[i.fa.fa-graduation-cap] Education
-
-    +item("BSc. Computer Science", "University of Canterbury", "NOV '12", "NOV '17")
-    +item("Diploma in Web Development", "Natcoll Design Technology",  "FEB '09", "DEC '09")
+      | As an introduction to API First web development we were tasked with 
+      | completing a basic crowdfunding web application, first building the API to a 
+      | given specification and then the web application to use that API.
+      ul.tech
+        li Javascript
+        li Node.js
+        li Vue.js
+        li Express.js
+        li MySQL
+  
+  .refs References will be supplied upon Request.
 
 #sidebar
   #contact.side-block
