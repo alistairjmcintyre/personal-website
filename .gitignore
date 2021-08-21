@@ -1,2 +1,4 @@
 node_modules/
-resume_temp.htm
+# Everything will be done by sass and pug, so don't bother with adding these to git
+*.pdf
+*.html
