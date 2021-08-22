@@ -1,0 +1,95 @@
+include ../mixins/resume.pug
+
+#main
+  #title
+    h1 ALISTAIR MCINTYRE
+    .subtitle FULL STACK ENGINEER
+
+  .main-block
+    h2.me #[i.fa.fa-user] ABOUT ME
+    .about-me
+      | I am a 30 year old resident of Christchurch, passionate about solving real world problems.
+      |
+
+  .main-block
+    h2 #[i.fa.fa-graduation-cap] EDUCATION
+
+    +item("BSc. Computer Science", "University of Canterbury", "NOV '12", "NOV '17")
+    +item("Diploma in Web Development", "Natcoll Design Technology",  "FEB '09", "DEC '09")
+
+  .main-block
+    h2 #[i.fa.fa-suitcase] EXPERIENCE
+
+    +item ("GIS Platform Engineer", "Catalyst IT Ltd", "APR '19", "NOW")
+      :markdown-it
+        - Responsible for creation, deployment and management of a GIS platform built out of existing Open Source components.
+        - Championed a modern approach, utilising Containerisation, Kubernetes and Continuous Delivery tooling to
+          automate deployment and system management processes.
+
+    +item("Junior Systems Administrator", "Catalyst IT Ltd", "JUL '18", "JUL '19")
+      :markdown-it
+        - Responsible for monitoring, improvement and maintenance of multiple systems across the South Island Catalyst team.
+        - Gained significant proficiency with cloud computing concepts, configuration management, security, networking
+          and managing systems at an enterprise scale.
+        - Responsible for migration and deployment of a microservice architecture application from Ansible
+          to Puppet to bring it in line with company best practices. This work was later successfully re-used
+          on future projects by other Systems Administrators.
+
+    +item("Junior Software Developer", "Croplogic", "JAN '18", "JUL '18")
+      :markdown-it
+        - Part of a small team at an exciting Agritech company.
+        - Built 2 cross-platform mobile applications using Flutter, Google's new cross-platform mobile framework.
+        - Adapted to new technologies I had never used before very quickly.
+
+  .refs References will be supplied upon Request.
+
+
+
+
+#sidebar
+  #contact.side-block
+    h1 Contact
+    ul
+      li #[i.fa.fa-envelope] alistairjmcintyre@gmail.com
+      li
+        .phone #[i.fa.fa-phone] 027 633 0043
+
+  #skills.side-block
+    h1 Skills
+    ul
+      li UI/UX Design
+      li SDLC
+      li Git
+      li CI/CD
+      li Agile Scrum
+      li Test Driven Development
+      li Relational Database Management
+    h1 Languages
+    ul
+      li Dart
+      ul.libs
+        li Flutter
+      li Python
+      ul.libs
+        li Flask & SQLAlchemy
+        li Django
+        li Matplotlib
+      li Java
+      ul.libs
+        li JavaFX
+        li Maven
+        li JUnit
+      li Javascript
+      ul.libs
+        li Node.js
+        li jQuery
+        li Vue.js
+        li Express
+      li SQL
+      ul.libs
+        li MySQL
+        li Oracle
+        li Postgres
+      li Objective-C
+      li PHP
+      li C/C++
