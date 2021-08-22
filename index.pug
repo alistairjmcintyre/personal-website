@@ -4,10 +4,14 @@ html(lange="en")
         title= "Alistair McIntyre"
         meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
     body
-        include site_header.pug
-        include resume.pug
+        include templates/header.pug
+        #resume
+          include templates/resume.pug
+        include templates/footer.pug
 
 style
-  include css/animations.scss
+  include css/site/animations.scss
 style
-  include css/site.scss
+  include css/site/style.scss
+style
+  include css/site/resume.scss
