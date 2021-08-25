@@ -36,8 +36,19 @@
     margin-left: 0px;
   }
 
+  @media only screen and (max-device-width: 800px) {
+    #resume {
+      scale: 1.0;
+    }
+  }
+
+  @media only screen and (min-device-width: 801px) {
+    #resume {
+      scale: 1.25;
+    }
+  }
+
 #resume {
-    scale: 1.25;
     padding-top: 5em;
     padding-bottom: 0%;
     display: flex;
