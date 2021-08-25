@@ -1,0 +1,26 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "The personal website and resume project for Alistair McIntyre",
+  "main": "index.js",
+  "dependencies": {
+    "jstransformer-markdown-it": "2.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "pug-cli": "^1.0.0-alpha6",
+    "relaxedjs": "^0.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alistairjmcintyre/resume.git"
+  },
+  "author": "Alistair McIntyre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alistairjmcintyre/resume/issues"
+  },
+  "homepage": "https://github.com/alistairjmcintyre/resume#readme"
+}
