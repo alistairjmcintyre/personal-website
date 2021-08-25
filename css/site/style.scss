@@ -36,7 +36,7 @@ body.loading * {
   Configure for the background and overlay
 **/
 #header {
-  background: url('https://alistair.nz/css/images/bg.jpg') bottom center;
+  background: url('img/background.jpg') bottom center;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -57,7 +57,7 @@ body.loading * {
 #overlay {
   animation: overlay 1.5s 1.5s forwards;
   background-attachment: fixed;
-  background-image: url("https://alistair.nz/css/images/overlay-pattern.png"), url("https://alistair.nz/css/images/overlay.svg");
+  background-image: url("img/overlay-pattern.png"), url("img/overlay.svg");
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
