@@ -10,7 +10,7 @@
     --page-height: 11.69in;
     --main-width: 700px;
     --sidebar-width: calc(var(--page-width) - var(--main-width));
-    --decorator-horizontal-margin: 0.2in;
+    --decorator-horizontal-margin: 0.19in;
 
     --sidebar-horizontal-padding: 0.2in;
 
@@ -33,7 +33,7 @@
   }
 
   .decorator::after {
-    margin-left: 1px;
+    margin-left: 0px;
   }
 
 #resume {
@@ -174,7 +174,7 @@
 .details li::before{
   position: relative;
   margin-left: -4.25pt;
-  content: '- ';
+  content: '• ';
   font-size: 8pt;
 }
 

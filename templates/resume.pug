@@ -8,8 +8,10 @@ include ../mixins/resume.pug
   .main-block
     h2.me #[i.fa.fa-user] ABOUT ME
     .about-me
-      | I am a 30 year old resident of Christchurch, passionate about solving real world problems.
+      | I am a 30 year old resident of Christchurch, passionate about technology, mentoring and solving real world problems.<br/><br/>
       |
+      | I have the unique experience of having spent time in both development and operations, giving me a holistic view of complex
+      | systems, capable of implementation and troubleshooting at every level.
 
   .main-block
     h2 #[i.fa.fa-graduation-cap] EDUCATION
@@ -23,23 +25,44 @@ include ../mixins/resume.pug
     +item ("GIS Platform Engineer", "Catalyst IT Ltd", "APR '19", "NOW")
       :markdown-it
         - Responsible for creation, deployment and management of a GIS platform built out of existing Open Source components.
-        - Championed a modern approach, utilising Containerisation, Kubernetes and Continuous Delivery tooling to
+        - Championed a modern approach, utilising Containerisation, Kubernetes and Continuous Integration and Delivery to
           automate deployment and system management processes.
+        - Developed a product within a company that typically sells it's resources in a services capacity. This required a slightly
+          different approach to development and requirements.
+        - Mentored other team members and endeavoured to create an inclusive team culture, working primarily to the 5 ideals from The Unicorn Project (by Gene Kim)
+      ul.tech
+        li Terraform
+        li Kubernetes
+        li Docker
+        li Cloud
+        li Gitlab CI/CD
+        li Python
+        li Helm
 
     +item("Junior Systems Administrator", "Catalyst IT Ltd", "JUL '18", "JUL '19")
       :markdown-it
         - Responsible for monitoring, improvement and maintenance of multiple systems across the South Island Catalyst team.
-        - Gained significant proficiency with cloud computing concepts, configuration management, security, networking
-          and managing systems at an enterprise scale.
-        - Responsible for migration and deployment of a microservice architecture application from Ansible
-          to Puppet to bring it in line with company best practices. This work was later successfully re-used
-          on future projects by other Systems Administrators.
+        - Gained proficiency with cloud computing concepts, configuration management, security, networking and an understanding of how to manage systems.
+        - Responsible for migration and deployment of a microservice architecture application from Ansible to Puppet to bring it in line with company
+          best practices. This work was later successfully re-used on future projects by other team members.
+      ul.tech
+        li Puppet
+        li Ansible
+        li Networking
+        li Database Administration
+        li Monitoring
 
     +item("Junior Software Developer", "Croplogic", "JAN '18", "JUL '18")
       :markdown-it
-        - Part of a small team at an exciting Agritech company.
-        - Built 2 cross-platform mobile applications using Flutter, Google's new cross-platform mobile framework.
-        - Adapted to new technologies I had never used before very quickly.
+        - Part of a small development team at an exciting Agritech company.
+        - Built 2 cross-platform mobile applications, one customer-facing to track the data from their farms, and another to enable agronomists to easily retrieve and update data in the field.
+      ul.tech
+        li Dart
+        li Flutter
+        li Firebase
+        li Objective-C
+        li Python
+
 
   .refs References will be supplied upon Request.
 
@@ -57,39 +80,30 @@ include ../mixins/resume.pug
   #skills.side-block
     h1 Skills
     ul
-      li UI/UX Design
-      li SDLC
-      li Git
+      li Database Administration
+      li GIS
+      ul.libs
+        li Working with Spatial Data
+        li Mapping
       li CI/CD
-      li Agile Scrum
-      li Test Driven Development
-      li Relational Database Management
-    h1 Languages
+      li Cloud-Native Design
+      li Systems Administration
+
+    h1 Technologies
     ul
-      li Dart
+      li Languages
       ul.libs
-        li Flutter
-      li Python
+        li Dart
+        li Python
+        li Java
+        li Javascript
+        li C#
+      li Terraform
+      li Kubernetes
+      li Docker
+      li Configuration Management
       ul.libs
-        li Flask & SQLAlchemy
-        li Django
-        li Matplotlib
-      li Java
-      ul.libs
-        li JavaFX
-        li Maven
-        li JUnit
-      li Javascript
-      ul.libs
-        li Node.js
-        li jQuery
-        li Vue.js
-        li Express
-      li SQL
-      ul.libs
-        li MySQL
-        li Oracle
-        li Postgres
-      li Objective-C
-      li PHP
-      li C/C++
+        li Puppet
+        li Ansible
+        li Helm & Helmfile
+
