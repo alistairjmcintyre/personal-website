@@ -3,33 +3,45 @@ include ../mixins/resume.pug
 #main
   #title
     h1 ALISTAIR MCINTYRE
-    .subtitle FULL STACK ENGINEER
+    .subtitle FULL STACK SOFTWARE DEVELOPER
 
   .main-block
     h2.me #[i.fa.fa-user] ABOUT ME
     .about-me
-      | I am a 30 year old resident of Christchurch, passionate about technology, mentoring and solving real world problems.<br/><br/>
+      | I am a 33 year old resident of Christchurch, passionate about technology, mentoring and solving real world problems.<br/><br/>
       |
-      | I have the unique experience of having spent time in both development and operations, giving me a holistic view of complex
-      | systems, capable of implementation and troubleshooting at every level.
+      | I have the unique experience of having spent my professional career working in both development and operations, giving me a 
+      | holistic view of complex systems, capable of implementation and troubleshooting at every level. <br /><br />
+      |
+      | In my spare time, I like to play disc golf, video games and board games with friends.
+      | 
 
-  .main-block
-    h2 #[i.fa.fa-graduation-cap] EDUCATION
-
-    +item("BSc. Computer Science", "University of Canterbury", "NOV '12", "NOV '17")
-    +item("Diploma in Web Development", "Natcoll Design Technology",  "FEB '09", "DEC '09")
-
-  .main-block
+    .main-block
     h2 #[i.fa.fa-suitcase] EXPERIENCE
 
-    +item ("GIS Platform Engineer", "Catalyst IT Ltd", "APR '19", "NOW")
+    +item ("Technical Lead/Solutions Architect", "Catalyst IT Ltd", "JAN '22", "NOW")
       :markdown-it
-        - Responsible for creation, deployment and management of a GIS platform built out of existing Open Source components.
-        - Championed a modern approach, utilising Containerisation, Kubernetes and Continuous Integration and Delivery to
-          automate deployment and system management processes.
-        - Developed a product within a company that typically sells it's resources in a services capacity. This required a slightly
-          different approach to development and requirements.
-        - Mentored other team members and endeavoured to create an inclusive team culture, working primarily to the 5 ideals from The Unicorn Project (by Gene Kim)
+        - Developed my business analysis skills significantly, working much closer with clients to gather their requirements and synthesize them 
+          into a solution that met their needs.
+        - Developed the Forward Works Viewer, a tool for improving collaboration between entities in the construction sector, to reduce waste and 
+          improve outcomes.
+        - Developed Whangarei District Council's ePlan, giving their ratepayers a much-needed tool for figuring out how a complicated document 
+          like a district plan would actually relate to them.
+        - Developed the Underground Asset Register, so that Wellington City Council can have a holistic view of what's going on underground, 
+          and to aid the organisations that implement the data to have more accurate information, and to collaborate and share information amongst one another.
+      ul.tech 
+        li Python
+        li Django 
+        li Wagtail
+        li Gitlab CI/CD 
+        li Systems Architecture 
+
+    +item ("GIS Platform Engineer", "Catalyst IT Ltd", "APR '19", "FEB '23")
+      :markdown-it
+        - Responsible for creation, deployment and management of a fully open-source GIS platform.
+        - Championed modern approaches to development, implementing Infrastructure-as-Code solutions and Containerisation in an organisation with little experience 
+          in this area.
+        - Mentored and managed junior team members, being responsible for implementing process to accelerate their work.
       ul.tech
         li Terraform
         li Kubernetes
@@ -42,9 +54,7 @@ include ../mixins/resume.pug
     +item("Junior Systems Administrator", "Catalyst IT Ltd", "JUL '18", "JUL '19")
       :markdown-it
         - Responsible for monitoring, improvement and maintenance of multiple systems across the South Island Catalyst team.
-        - Gained proficiency with cloud computing concepts, configuration management, security, networking and an understanding of how to manage systems.
-        - Responsible for migration and deployment of a microservice architecture application from Ansible to Puppet to bring it in line with company
-          best practices. This work was later successfully re-used on future projects by other team members.
+        - Gained proficiency with cloud computing concepts, configuration management, security, networking and an understanding of systems management.
       ul.tech
         li Puppet
         li Ansible
@@ -52,16 +62,12 @@ include ../mixins/resume.pug
         li Database Administration
         li Monitoring
 
-    +item("Junior Software Developer", "Croplogic", "JAN '18", "JUL '18")
-      :markdown-it
-        - Part of a small development team at an exciting Agritech company.
-        - Built 2 cross-platform mobile applications, one customer-facing to track the data from their farms, and another to enable agronomists to easily retrieve and update data in the field.
-      ul.tech
-        li Dart
-        li Flutter
-        li Firebase
-        li Objective-C
-        li Python
+  .main-block
+    h2 #[i.fa.fa-graduation-cap] EDUCATION
+
+    +item("BSc. Computer Science", "University of Canterbury", "NOV '12", "NOV '17")
+    +item("Diploma in Web Development", "Natcoll Design Technology",  "FEB '09", "DEC '09")
+
 
 
   .refs References will be supplied upon Request.
@@ -73,7 +79,7 @@ include ../mixins/resume.pug
   #contact.side-block
     h1 Contact
     ul
-      li #[i.fa.fa-envelope] alistairjmcintyre@gmail.com
+      li #[i.fa.fa-envelope] alistairjmcintyre@alistair.nz
       li
         .phone #[i.fa.fa-phone] 027 633 0043
 
@@ -85,20 +91,21 @@ include ../mixins/resume.pug
       ul.libs
         li Working with Spatial Data
         li Mapping
+        li Spatial data Analysis
       li CI/CD
       li Cloud-Native Design
       li Systems Administration
+      li Systems Architecture
 
     h1 Technologies
     ul
       li Languages
       ul.libs
-        li Dart
         li Python
         li Java
-        li Javascript
+        li JavaScript + TypeScript
+        li Dart
         li C#
-      li Terraform
       li Kubernetes
       li Docker
       li Configuration Management
@@ -106,4 +113,6 @@ include ../mixins/resume.pug
         li Puppet
         li Ansible
         li Helm & Helmfile
+        li Terraform 
+
 
